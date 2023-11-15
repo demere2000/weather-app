@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // Importing the React library
+import Weather from './Weather'; // Importing the Weather component
 
+// Defining the App component
 function App() {
+  // This function returns JSX, a syntax similar to HTML
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello, Weather App!</h1> {/* Displaying a header */}
+      <Weather /> {/* Including the Weather component */}
     </div>
   );
 }
 
-export default App;
+export default App; // Exporting the App component for use in index.js
