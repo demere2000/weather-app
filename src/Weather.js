@@ -37,7 +37,6 @@ function Weather() {
         onChange={handleInputChange}
         placeholder="Enter city"
       />
-      {/* // Button to trigger weather data fetch */}
       <button onClick={fetchWeather}>Get Weather</button>
       {weatherData && ( // Conditional rendering of weather data
         <div>
