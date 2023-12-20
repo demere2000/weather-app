@@ -16,6 +16,7 @@ function Weather() {
     // The URL for the Weatherstack API, including the API key and the city query
     const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
 
+
     try {
       // Making an API request to the provided URL
       const response = await fetch(url);
