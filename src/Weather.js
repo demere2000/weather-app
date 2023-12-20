@@ -10,11 +10,11 @@ function Weather() {
   // Defining an asynchronous function to fetch weather data
   const fetchWeather = async () => {
     // Your Weatherstack API key (replace 'YOUR_API_KEY' with your actual key)
-    const apiKey = '404f1c548c9f49ef731942be7e49061b'; 
+    const apiKey = '404f1c548c9f49ef731942be7e49061b';
     // The city for which you want to fetch the weather (replace 'YourCity')
     const city = 'London';
     // The URL for the Weatherstack API, including the API key and the city query
-    const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
+    const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
 
     try {
       // Making an API request to the provided URL
